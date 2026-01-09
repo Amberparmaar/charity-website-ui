@@ -199,11 +199,20 @@ footer {
     display: none !important;
     
   }
+  .featrued-project video{
+    width: 100% !important;
+    height: 100% !important;
+    margin-right: 10px;
+  }
   .row1{
     margin-left: 80px !important;
     row-gap: 20px;
     
   }
+  /* .brand{
+    width: 100% !important;
+    height: auto !important;
+  } */
   .brand img{
     width: 80px !important;
     height: 80px !important;
