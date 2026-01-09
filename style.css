@@ -13,6 +13,10 @@
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
 }
+.nav-link:hover{
+  color: #efa039;
+  transition: color 0.6s ease;
+}
 .color-base {
   background-color: var(--basecolor);
 }
@@ -179,11 +183,31 @@ footer {
   color: #efa039;
 }
 
+.team img:hover{
+  border-radius: 50%;
+  transition: border-radius 0.6s ease;
+}
 @media screen and (max-width: 1000px) {
+  .tagline{
+    display: none !important;
+  }
   .prom {
-    position: static;
+    display: none !important;
+    
   }
-  .promo {
-    position: static;
+    .promo2 {
+    display: none !important;
+    
   }
+  .row1{
+    margin-left: 80px !important;
+    row-gap: 20px;
+    
+  }
+  .brand img{
+    width: 80px !important;
+    height: 80px !important;
+
+  }
+ 
 }

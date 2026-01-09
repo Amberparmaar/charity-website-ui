@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animation css -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
@@ -18,9 +23,9 @@
 
 <body id="scroll">
   <!-- header start -->
-  <header class="container-xxl text-white">
-    <div class="d-flex align-items-center justify-content-between color-base py-2 px-5">
-      <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+  <header class="container-xxl text-white fixed-top top-0 start-0">
+    <div class="tagline d-flex align-items-center justify-content-between color-base py-2 px-5">
+      <div class="d-flex flex-column flex-md-row align-items-center gap-4 pt-2">
         <p><i class="fa-regular fa-envelope"></i> Info@YourDomain.com</p>
         <p><i class="fa-solid fa-mobile-screen"></i> +(333) 052 39876</p>
       </div>
@@ -32,7 +37,7 @@
         <i class="fa-brands fa-linkedin-in"></i>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg p-4">
+    <nav class="navbar navbar-expand-lg p-4 bg-light">
       <div class="container-xxl">
         <a href=""><img class="ms-3" src="./assets/logo.png" alt="nav-logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -105,20 +110,20 @@
               <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
-          <button class="btn color-base text-white rounded-1 py-2 px-3 me-3" type="submit">Donate Now</button>
+         <button type="button" class="btn color-base text-white rounded-1 py-2 px-3 me-3">Contact Us</button>
         </div>
       </div>
     </nav>
   </header>
   <!-- header end -->
   <!-- hero start -->
-  <section class="hero container-xxl">
+  <section class="hero container-xxl mt-5 pt-5">
     <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./assets/slider-1.jpg" class="d-block w-100" alt="...">
           <div class="text-white carousel-caption d-none d-md-block position-absolute top-50 translate-middle-y">
-            <h6>Join Us Today</h6>
+            <h6 class="animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Join Us Today</h6>
             <h1 class="fade-in-right-text fw-bold display-5" style="word-spacing: -10px;">
               <span>B</span>
               <span>e</span>
@@ -140,7 +145,7 @@
               <span>l</span>
               <span>e</span>
             </h1>
-            <p class="w-50 mx-auto">Help today because tomorrow you may be the one who needs helping!
+            <p class="w-50 mx-auto animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Help today because tomorrow you may be the one who needs helping!
               Forget what you can get and see what you can give.</p>
             <button type="button" class="btn color-base text-white rounded-1 py-2 px-3 me-3">Join With Us</button>
             <button type="button" class="btn  color-base text-white rounded-1 py-2 px-3 me-3">Donate Now</button>
@@ -222,7 +227,7 @@
     <div class="promo container text-start position-absolute top-50 start-50 translate-middle">
       <div class="row">
         <div class="col">
-          <div class="card px-4 py-2 w-100 border border-0 rounded-0" style="width: 18rem;">
+          <div class="card px-4 py-2 w-100 border border-0 rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <img src="./assets/icon-1.png" class="card-img-top img-fluid w-25" alt="...">
             <div class="card-body">
               <h5 class="card-title fw-bold">Make Donation</h5>
@@ -232,7 +237,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card px-4 py-2 w-100 border border-0  rounded-0" style="width: 18rem;">
+          <div class="card px-4 py-2 w-100 border border-0  rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <img src="./assets/icon-2.png" class="card-img-top img-fluid w-25" alt="...">
             <div class="card-body">
               <h5 class="card-title fw-bold">Fundrising</h5>
@@ -242,7 +247,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card px-4 py-2 w-100 border border-0 rounded-0" style="width: 18rem;">
+          <div class="card px-4 py-2 w-100 border border-0 rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <img src="./assets/icon-3.png" class="card-img-top img-fluid w-25" alt="...">
             <div class="card-body">
               <h5 class="card-title fw-bold">Become A Volunteer</h5>
@@ -257,7 +262,7 @@
   <!-- promo-cards end -->
   <!-- Recent Causes start -->
   <section class="container-xxl bg-gray position-relative z-1 p-5">
-    <div class="text-center py-5">
+    <div class="text-center py-5 animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">
       <h2>Recent Causes</h2>
       <hr style="width: 50px;" class="border border-4  border-warning mx-auto">
       <p>Help today because tomorrow you may be the one who
@@ -265,8 +270,8 @@
     </div>
     <div class="promo container text-start">
       <div class="row">
-        <div class="col">
-          <div class="card w-100 border border-0 rounded-0 position-relative" style="width: 18rem;">
+        <div class="col-12 col-md-4 col-lg-4 gy-4">
+          <div class="card w-100 border border-0 rounded-0 position-relative animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <button type="button"
               class="btn btn-hover color-base text-white rounded-0 position-absolute  top-0 end-0 opacity-75 m-2">Donate
               Now <i class="fa-solid fa-plus fs-6"></i></button>
@@ -288,8 +293,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card w-100 border border-0 rounded-0 position-relative" style="width: 18rem;">
+        <div class="col-12 col-md-4 col-lg-4 gy-4">
+          <div class="card w-100 border border-0 rounded-0 position-relative animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <button type="button"
               class="btn btn-hover color-base text-white rounded-0 position-absolute  top-0 end-0 opacity-75 m-2">Donate
               Now <i class="fa-solid fa-plus fs-6"></i></button>
@@ -311,8 +316,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card w-100 border border-0 rounded-0 position-relative" style="width: 18rem;">
+        <div class="col-12 col-md-4 col-lg-4 gy-4">
+          <div class="card w-100 border border-0 rounded-0 position-relative animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <button type="button"
               class="btn btn-hover color-base text-white rounded-0 position-absolute  top-0 end-0 opacity-75 m-2">Donate
               Now <i class="fa-solid fa-plus fs-6"></i></button>
@@ -339,12 +344,12 @@
   </section>
   <!-- Recent Causes end -->
   <!-- promo2 start -->
-  <section class="container-xxl position-relative">
+  <section class="promo2 container-xxl position-relative">
     <div class="start-div d-none d-lg-block"></div>
     <div class="promo container text-start position-absolute top-0 start-0 m-5 p-5">
       <div class="row">
         <div class="col">
-          <div class="card w-100 border-dotted rounded-0 text-center" style="width: 18rem;">
+          <div class="card w-100 border-dotted rounded-0 text-center animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <img src="./assets/profile.jpg" class="card-img-top img-fluid rounded-circle w-50 mx-auto my-2" alt="...">
 
             <div class="card-body">
@@ -358,7 +363,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card w-100 border border-0 rounded-0 position-relative" style="width: 18rem;">
+          <div class="card w-100 border border-0 rounded-0 position-relative animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <img src="./assets/history.jpg" class="card-img-top img-fluid w-100" alt="...">
             <div class="card-body">
               <h5 class="card-title fw-bold">Our History</h5>
@@ -370,7 +375,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card w-100 border border-0 rounded-0 position-relative z-1" style="width: 18rem;">
+          <div class="card w-100 border border-0 rounded-0 position-relative z-1 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <button type="button"
               class="btn btn-hover color-base text-white rounded-0 position-absolute top-0 end-0 opacity-75 m-2">Donate
               Now <i class="fa-solid fa-plus fs-6"></i></button>
@@ -395,7 +400,7 @@
     <div class="row m-4">
       <div class="col-12 col-md-6 col-lg-6 pt-5"> <button type="button"
           class="btn btn-hover color-base text-white rounded-1 my-3">Featured Campaigns</button>
-        <h1>Featured project to built a School.</h1>
+        <h1 class="animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Featured project to built a School.</h1>
         <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make in the lives
           of
           the poor, the abused and the helpless.</p>
@@ -420,7 +425,7 @@
   <section class="container-xxl bg-gray position-relative">
     <div class="start-div d-none d-lg-block position-absolute top-0"></div>
     <div class="text-center py-5">
-      <h2 class="fw-bold">Meet Out Volunteers</h2>
+      <h2 class="fw-bold animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Meet Out Volunteers</h2>
       <hr style="width: 50px;" class="border border-4  border-warning mx-auto">
       <p>Help today because tomorrow you may be the one who
         needs more helping!</p>
@@ -428,10 +433,10 @@
     <div class="row p-5">
       <div class="col-12 col-md-6 col-lg-6 z-1">
         <div class="row gy-3">
-          <div class="col-6"><img class="img-fluid " src="./assets/team-1.jpg" alt=""></div>
-          <div class="col-6"><img class="img-fluid " src="./assets/team-2.jpg" alt=""></div>
-          <div class="col-6"><img class="img-fluid" src="./assets/team-3.jpg" alt=""></div>
-          <div class="col-6"><img class="img-fluid" src="./assets/team-4.jpg" alt=""></div>
+          <div class="team col-6"><img class="img-fluid" src="./assets/team-1.jpg" alt=""></div>
+          <div class="team col-6"><img class="img-fluid" src="./assets/team-2.jpg" alt=""></div>
+          <div class="team col-6"><img class="img-fluid" src="./assets/team-3.jpg" alt=""></div>
+          <div class="team col-6"><img class="img-fluid" src="./assets/team-4.jpg" alt=""></div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-6 pt-5 ">
@@ -457,22 +462,22 @@
   <section class="counter container-xxl py-5">
     <div class="container text-center mt-5">
       <div class="row align-items-center">
-        <div class="col py-5">
+        <div class=" col py-5 animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">
           <i class="fa-solid fa-dollar-sign fs-1"></i>
           <h1 class="color-text py-3 fw-bold">85389</h1>
           <p class="fs-5">Money Donated</p>
         </div>
-        <div class="col py-5">
+        <div class="col py-5 animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">
           <i class="fa-regular fa-face-smile fs-1"></i>
           <h1 class="color-text py-3 fw-bold">10693</h1>
           <p class="fs-5">Volunteer Around The World</p>
         </div>
-        <div class="col py-5">
+        <div class="col py-5 animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">
           <i class="fa-regular fa-user fs-1"></i>
           <h1 class="color-text py-3 fw-bold">50177</h1>
           <p class="fs-5">People Impacted</p>
         </div>
-        <div class="col py-5">
+        <div class="col py-5 animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">
           <i class="fa-solid fa-comments fs-1"></i>
           <h1 class="color-text py-3 fw-bold">85389</h1>
           <p class="fs-5">Positive Feedbacks</p>
@@ -485,7 +490,7 @@
   <!-- upcoming events start -->
   <section class="container-xxl bg-gray py-5">
     <div class="text-center py-5">
-      <h2 class="fw-bold">Upcoming Events</h2>
+      <h2 class="fw-bold animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Upcoming Events</h2>
       <hr style="width: 50px;" class="border border-4 border-warning mx-auto">
       <p>Help today because tomorrow you may be the one who
         needs more helping!</p>
@@ -550,15 +555,15 @@
   <!-- what people say start -->
   <section class="container-xxl py-5">
     <div class="text-center py-5">
-      <h2 class="fw-bold">What People Say</h2>
+      <h2 class="fw-bold animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">What People Say</h2>
       <hr style="width: 50px;" class="border border-4 border-warning mx-auto">
       <p>Help today because tomorrow you may be the one who
         needs more helping!</p>
     </div>
     <div class="container text-start">
-      <div class="row align-items-start">
+      <div class="row1 row align-items-start">
         <div class="col">
-          <div class="card bg-gray rounded-0" style="width: 18rem;">
+          <div class="card bg-gray rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <div class="card-body">
               <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference
                 YOU can make in the lives of the poor, the abused and the helpless.</p>
@@ -569,7 +574,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card bg-gray rounded-0" style="width: 18rem;">
+          <div class="card bg-gray rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <div class="card-body">
               <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference
                 YOU can make in the lives of the poor, the abused and the helpless.</p>
@@ -580,7 +585,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card bg-gray rounded-0" style="width: 18rem;">
+          <div class="card bg-gray rounded-0 animate__animated animate__pulse animate__delay-1s animate__slow	1s" style="width: 18rem;">
             <div class="card-body">
               <p class="card-text">The secret to happiness lies in helping others. Never underestimate the difference
                 YOU can make in the lives of the poor, the abused and the helpless.</p>
@@ -597,14 +602,14 @@
   <!-- recent stories start -->
   <section class="container-xxl bg-gray position-relative z-1 p-5">
     <div class="text-center py-5">
-      <h2>Recent Stories</h2>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Recent Stories</h2>
       <hr style="width: 50px;" class="border border-4  border-warning mx-auto">
       <p>Help today because tomorrow you may be the one who
         needs more helping!</p>
     </div>
     <div class="promo container text-start">
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-4 col-lg-4 gy-3">
           <div class="card w-100 rounded-0" style="width: 18rem;">
             <img src="./assets/home-blog-1.jpg" class="card-img-top img-fluid w-100" alt="...">
             <div class="card-body">
@@ -617,7 +622,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-4 col-lg-4 gy-3">
           <div class="card w-100 rounded-0" style="width: 18rem;">
             <img src="./assets/home-blog-2.jpg" class="card-img-top img-fluid w-100" alt="...">
             <div class="card-body">
@@ -630,10 +635,10 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-4 col-lg-4 gy-3">
           <div class="card w-100 rounded-0" style="width: 18rem;">
             <img src="./assets/home-blog-3.jpg" class="card-img-top img-fluid w-100" alt="...">
-            <div class="card-body">
+            <div class="card-body"> 
               <p class="text-body-secondary"> January 01.2021</p>
               <h5 class="card-title fw-bold">The History of Donation Told</h5>
               <p class="card-text text-body-secondary">The secret to happiness lies in helping others. Never
@@ -646,7 +651,7 @@
       </div>
     </div>
   </section>
-  <div class="brand container-xxl p-5"><img src="./assets/sponsor-2.png" alt="" class="me-5">
+  <div class="brand container-xxl d-flex p-5"><img src="./assets/sponsor-2.png" alt="" class="me-5">
     <img src="./assets/sponsor-3.png" alt="" class="me-5">
     <img src="./assets/sponsor-4.png" alt="" class="me-5">
     <img src="./assets/sponsor-5.png" alt="" class="me-5">
@@ -674,7 +679,7 @@
       </div>
     </div>
     <div class="lh-lg footer-text">
-      <h5>Recent Campaigns</h5>
+      <h5 class="animate__animated animate__fadeInDown animate__delay-2s animate__slow	1s">Recent Campaigns</h5>
       <ul class="p-0">
         <li>First charity activity of this summer. -1 Year Ago</li>
         <li>Big charity: build school for poor children. -2 Year Ago</li>
