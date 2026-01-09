@@ -1,0 +1,189 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --basecolor: #f8b864;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
+}
+.color-base {
+  background-color: var(--basecolor);
+}
+.color-text {
+  color: var(--basecolor);
+}
+/* Define the keyframe animation */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(
+      20px
+    ); /* Start 20px to the right of its final position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at its original position */
+  }
+}
+
+/* Base styles for the animated words */
+.fade-in-right-text span {
+  opacity: 0; /* Initially hidden */
+  display: inline-block; /* Allows transform to work and keeps words inline */
+  animation-name: fadeInRight;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; /* Ensures the final state (opacity: 1, transform: 0) is maintained */
+}
+
+/* Staggered animation delays for each letter */
+.fade-in-right-text span:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in-right-text span:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in-right-text span:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in-right-text span:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in-right-text span:nth-of-type(5) {
+  animation-delay: 1s;
+}
+.fade-in-right-text span:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+.fade-in-right-text span:nth-of-type(7) {
+  animation-delay: 1.4s;
+}
+.fade-in-right-text span:nth-of-type(8) {
+  animation-delay: 1.6s;
+}
+.fade-in-right-text span:nth-of-type(9) {
+  animation-delay: 1.8s;
+}
+.fade-in-right-text span:nth-of-type(10) {
+  animation-delay: 2s;
+}
+.fade-in-right-text span:nth-of-type(11) {
+  animation-delay: 2.2s;
+}
+.fade-in-right-text span:nth-of-type(12) {
+  animation-delay: 2.4s;
+}
+.fade-in-right-text span:nth-of-type(13) {
+  animation-delay: 2.6s;
+}
+.fade-in-right-text span:nth-of-type(14) {
+  animation-delay: 2.8s;
+}
+.fade-in-right-text span:nth-of-type(15) {
+  animation-delay: 3s;
+}
+.fade-in-right-text span:nth-of-type(16) {
+  animation-delay: 3.2s;
+}
+.fade-in-right-text span:nth-of-type(17) {
+  animation-delay: 3.4s;
+}
+.fade-in-right-text span:nth-of-type(18) {
+  animation-delay: 3.6s;
+}
+.fade-in-right-text span:nth-of-type(19) {
+  animation-delay: 3.8s;
+}
+.prom {
+  margin-bottom: 180px;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+.btn-hover:hover {
+  background-color: #efa039 !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+.border-dotted {
+  border: 2px dotted rgb(190, 189, 189);
+}
+.start-div {
+  width: 600px;
+  height: 600px;
+  clip-path: ellipse(51% 53% at 12% 11%);
+  background-color: #efdcc4;
+}
+.end-div {
+  width: 600px;
+  height: 600px;
+  clip-path: ellipse(44% 38% at 71% 85%);
+  background-color: #efdcc4;
+}
+.featrued-project {
+  background-image: url("./assets/featured-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.counter {
+  height: 400px;
+  background-image: url("./assets/counters-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.brand img {
+  animation-name: fadeleft;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeleft {
+  0% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(-100px);
+  }
+}
+footer {
+  background-image: url("./assets/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.bg-footer {
+  background-color: #222;
+}
+.footer-text {
+  color: #999999;
+}
+.breadcrumb li a {
+  color: #efa039;
+}
+
+@media screen and (max-width: 1000px) {
+  .prom {
+    position: static;
+  }
+  .promo {
+    position: static;
+  }
+}
